@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alertes bons plans croisières - Recevez des offres exclusives jusqu'à -75% sur les meilleures croisières">
+    <meta name="keywords" content="croisières, bons plans, promotions, réductions, offres exclusives">
+    <title>CroisièresPromos | Alertes Bons Plans jusqu'à -75%</title>
+    <style>
+        :root {
+            --primary-color: #1a5276;
+            --secondary-color: #2e86c1;
+            --accent-color: #ff5722;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        .newsletter-box {
+            background-color: rgba(26, 82, 118, 0.9);
+            max-width: 600px;
+            width: 100%;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #FFD700;
+        }
+        
+        .newsletter-headline {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .newsletter-form input[type="email"] {
+            flex: 1;
+            min-width: 0;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            font-size: 1.1rem;
+        }
+        
+        .newsletter-form button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            white-space: nowrap;
+            transition: all 0.3s;
+        }
+        
+        .newsletter-form button:hover {
+            background-color: #e64a19;
+        }
+        
+        .privacy-note {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            margin-top: 1rem;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .thank-you-message {
+            background-color: rgba(46, 204, 113, 0.8);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+            animation: fadeIn 0.5s;
+        }
+        
+        .error-message {
+            background-color: rgba(231, 76, 60, 0.8);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+            animation: fadeIn 0.5s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .disclaimer {
+            font-size: 0.8rem;
+            max-width: 600px;
+            text-align: center;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: rgba(248, 249, 250, 0.1);
+            border-radius: 5px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        @media (max-width: 768px) {
+            .newsletter-box {
+                padding: 2rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .newsletter-headline {
+                font-size: 1.2rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-form input[type="email"],
+            .newsletter-form button {
+                width: 100%;
+                border-radius: 5px;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="newsletter-box">
+            <div class="logo">CroisièresPromos</div>
+            <h1>ALERTE BONS PLANS CROISIÈRES</h1>
+            <p class="newsletter-headline">Recevez des offres exclusives jusqu'à <span style="font-size: 1.8rem; font-weight: bold; color: #FFD700;">-75%</span> sur les meilleures croisières !</p>
+            
+            <iframe width="540" height="305" src="https://sibforms.com/serve/MUIFAF5vg67deHSwH_TxESgs2tLxwCgm8mfZqw2or8yMjwdD60EknL0Irj8Ov07lHsSWSlMdpvbkNTI7KphcCi4JAAaJswAgvKNHzfcPuwzdy2-TIL63TNZYQMhM4MNLecMtGHUZEr8ws0gsGsS3gE34t0XNy1jJKzYgyjp0KnLCWvpQZNgzuZxLuQvPM6LWzKpxvhAIsjykvm5u" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>            <p class="privacy-note">Un email par semaine. Désinscription en 1 clic. Vos données restent confidentielles.</p>
+            
+        </div>
+        
+        <div class="disclaimer">
+            <p>Ce site web est indépendant et n'est pas affilié officiellement à MSC Croisières.</p>
+        </div>
+    </div>
+
+    <script>
+    </script>
+</body>
+</html>
